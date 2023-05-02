@@ -20,6 +20,10 @@
         }
     }
     .form__data__right{
+
+    }
+
+    .data__input{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,3 +51,21 @@
    
 }
 
+.head__data__right{
+    display: flex;
+    justify-content: space-around
+    ;
+}
+.text-field__input{
+    // font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 43px;
+}
+.head__data__righh-item:hover{
+    a{
+    color: #F64C72;
+
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вход</title>
+    <title>Форма обратной связи</title>
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,34 +14,26 @@
     />
   </head>
   <body>
-    <div class="auth">
-      <div class="auth__block">
-        <div class="img__left">
+    <div class="request">
+      <div class="request__block">
+        <div class="img__leff__blockReq">
           <img
             src="../img/auth__right.png"
             alt="картинка слева"
-            class="img__left_auth"
+            class="img__left__req"
           />
         </div>
 
-        <div class="form__data__right">
-          <div class="head__data__right">
+        <div class="form__req">
           <div class="head__data__righh-item"><a href="../index.html"> На главную страницу </a></div>
-            <div class="head__data__righh-item">
-                <p>У вас еще нет аккаунта?</p>
-                <a href="./signUp.html"> Зарегистрироваться </a>
-            </div>
-          </div>
-          <div class="data__input">
-            <div class="data">
-              <input class="text-field__input" type="text" id="login" placeholder="Email"/>
-              <input class="text-field__input" type="password" id="login" placeholder="password"/>
-              <div class="buttonCallback">Войти</div>
-            </div>
-          </div>
-          
-        </div>
 
+          <form class="form__req" action="НАПИШИ СЮДА САМ ЧЕ ТО">
+            <textarea class="description" id="description" name="description"></textarea>
+            <input class="" type="text" id="login" placeholder="Оставьте заявку"/>
+            <div class="buttonCallback">Отправить заявку</div>
+          </form>
+        </div>
+        
       </div>
     </div>
   </body>
