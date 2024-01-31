@@ -14,7 +14,24 @@ ul, li {
   list-style: none; }
 
 body {
-  background-color: #242582; }
+  position: relative;
+  /* Установите фоновое изображение */
+  background-image: url('../../lawyerSuit/img/phone.jpg');
+  background-size: 120%; /* Заполнить фон всем экраном */
+  background-repeat: no-repeat; /* Не повторять изображение */
+}
+ц
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit; /* Наследует фоновое изображение от родительского элемента */
+  filter: blur(1px); /* Применить размытие радиусом 5 пикселей */
+  z-index: -1; /* Поместить псевдоэлемент под контент */
+}
 
 .container {
   max-width: 1920px;
@@ -79,6 +96,11 @@ body {
   padding-right: 0; }
 
 .authentication {
+  .number {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
   display: flex;
   align-items: center; }
   .authentication .sign__up {
